@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md">
+      <h1>String Interpolation</h1>
+      Text printed through '{{ stringInterpolation }}'
+    </div>
+    <div class="col-md">
+      <h1>Propoerty Binding</h1>
+      <p [innerText]="propertyBinding"></p>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-md">
+      <h1>Event binding</h1>
+      <input class="form-control" type="text" (keyup)="onKeyUp($event)">
+      <p>{{ eventBinding }}</p>
+    </div>
+    <div class="col-md">
+      <h1>Two-way binding</h1>
+      <input [(ngModel)]="twoWayBinding" type="text">
+      <p>{{ twoWayBinding }}</p>
+    </div>
+  </div>
+</div>
