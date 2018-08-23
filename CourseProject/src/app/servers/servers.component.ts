@@ -17,4 +17,9 @@ export class ServersComponent implements OnInit {
   ngOnInit() {
   }
 
+  newServerAdded(newServer) {
+    //this.servers.push({name: newServer.name, status: newServer.status});
+    this.servers.push(newServer);
+  }
+
 }
